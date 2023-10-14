@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+ 
+  justify-content: space-between;
+  background-color: brown;
+  color: azure;
+  margin-left: auto;
+   
+}
+.button{
+    
+}
