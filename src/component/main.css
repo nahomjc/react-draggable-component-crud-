@@ -1,0 +1,64 @@
+main {
+  position: relative;
+  min-height: calc(100vh - 130px);
+  width: 100%;
+  background: var(--grey-50);
+  
+}
+
+.container {
+  position: relative;
+ display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.box {
+  width: fit-content;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -600px;
+}
+
+.arrow {
+  position: absolute;
+  cursor: "pointer";
+  height: 40px;
+  background: rgb(201, 201, 206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.up-arrow {
+  width: 7rem;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7rem;
+  height: 40px;
+}
+.down-arrow {
+  width: 7rem;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.right-arrow {
+  height: 7rem;
+  width: 40px;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+.left-arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  height: 7rem;
+  width: 40px;
+}
