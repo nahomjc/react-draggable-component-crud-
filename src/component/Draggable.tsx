@@ -1,5 +1,7 @@
 import React, { useState, useRef } from "react";
 import Category from "./parent/Category";
+import "./main.css";
+import { AngleUp, AngleDown, AngleLeft, AngleRight } from "../utils/icons/Icon";
 interface Position {
   x: number;
   y: number;
@@ -18,7 +20,7 @@ const Draggable: React.FC = () => {
     if (ref.current) {
       const rect = ref.current.getBoundingClientRect();
       setPosition({
-        x: event.clientX - rect.left,
+        x: event.clientX - rect.left + 3,
         y: event.clientY - rect.top,
       });
     }
@@ -40,17 +42,35 @@ const Draggable: React.FC = () => {
   };
 
   return (
-    <p
-      ref={ref}
-      style={{
-        position: "absolute",
-        cursor: "move",
-        userSelect: "none",
-      }}
-      onMouseDown={handleMouseDown}
-    >
-      Category <Category />
-    </p>
+    <main>
+      <div className="container" id="main">
+        <div
+          id="box"
+          className="box"
+          ref={ref}
+          style={{
+            position: "absolute",
+            cursor: "move",
+            userSelect: "none",
+          }}
+          onMouseDown={handleMouseDown}
+        >
+          <Category />
+        </div>
+      </div>
+      <div className="up-arrow arrow">
+        <AngleUp />
+      </div>
+      <div className="right-arrow arrow">
+        <AngleRight />
+      </div>
+      <div className="down-arrow arrow">
+        <AngleDown />
+      </div>
+      <div className="left-arrow arrow">
+        <AngleLeft />
+      </div>
+    </main>
   );
 };
 

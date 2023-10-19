@@ -1,12 +1,14 @@
 import React from "react";
 import logo from "./logo.svg";
-import "./App.css";
+
 import Draggable from "./component/Draggable";
 import Category from "./component/parent/Category";
+import Header from "./component/head/Header";
 function App() {
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
+        <Header />
         <Draggable />
       </header>
     </div>

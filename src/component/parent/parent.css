@@ -1,12 +1,126 @@
 .container{
-    display: flex;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+ margin-left: 90px;
  
-  justify-content: space-between;
-  background-color: brown;
-  color: azure;
-  margin-left: auto;
-   
 }
 .button{
     
 }
+
+.category {
+    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; */
+  }
+  .category-text{
+    background: rgb(254, 254, 255);
+    border-radius: 4px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  h2 {
+    color: #9fb3c8;
+    font-size: 1.1rem;
+  }
+  .category-box > p {
+    background: rgb(254, 254, 255);
+    border-radius: 4px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .add-icon {
+    cursor: pointer;
+    background: #9fb3c8;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem;
+    margin-left: auto;
+  }
+  .category-box {
+    border-radius: 4px;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .test-container {
+   
+    display:flex;
+   
+    flex-direction: row;
+    margin-left: -90px;
+    margin-top:30px;
+    gap: 30px;
+
+  }
+  .icon{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .category-container {
+    
+    display: flex;
+    flex-direction:row;
+  }
+  
+  .category {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .sub-categories {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .sub-category {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  /* 
+  .sub-category::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background-color: #000;
+    left: 120px;
+    top: -10px;
+  } */
+  /* 
+  .sub-category-line::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background-color: #000;
+    left: 0;
+    top: 20px;
+  } */
+  /* 
+  .sub-category-line::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    left: 0;
+    top: -10px;
+  } */
+  
